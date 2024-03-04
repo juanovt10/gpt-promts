@@ -10,9 +10,9 @@ function EditPromtContentFallback() {
 
 const UpdatePrompt = () => {
   return (
-  <Suspense fallback={EditPromtContentFallback}>
-    <EditPromptContent />
-  </Suspense>
+    <Suspense fallback={EditPromtContentFallback}>
+      <EditPromptContent />
+    </Suspense>
   )
 }
 
