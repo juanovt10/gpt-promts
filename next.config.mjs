@@ -3,6 +3,9 @@ const nextConfig = {
     images: {
       domains: ["lh3.googleusercontent.com"],
     },
+    experimental: {
+      missingSuspenseWithCSRBailout: false,
+    },
     webpack(config) {
       config.experiments = {
         ...config.experiments,
@@ -12,10 +15,5 @@ const nextConfig = {
     },
   };
 
-  module.exports = {
-    experimental: {
-      missingSuspenseWithCSRBailout: false,
-    },
-  }
   
   export default nextConfig;
