@@ -1,16 +1,20 @@
-'use client';
+"use client";
 
 import { Suspense } from 'react';
 
 import EditPromptContent from '@components/EditPromptContent';
 
-const EditPrompt = () => {
+function EditPromtContentFallback() {
+  return <div>Loading...</div>
+}
+
+const UpdatePrompt = () => {
   return (
-  <Suspense fallback={<div>Loading...</div>}>
+  <Suspense fallback={EditPromtContentFallback}>
     <EditPromptContent />
   </Suspense>
   )
 }
 
-export default EditPrompt;
+export default UpdatePrompt;
 
