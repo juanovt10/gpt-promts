@@ -11,8 +11,6 @@ import {
 } from "next-auth/react";
 
 
-
-
 const Nav = () => {
     const { data: session} = useSession();
     
