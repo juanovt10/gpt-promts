@@ -38,9 +38,6 @@ const Feed = () => {
 
     
     fetchPosts();
-    const intervalId = setInterval(fetchPosts, 10000);
-
-    return () => clearInterval(intervalId)
   }, []);
 
 
